@@ -49,8 +49,8 @@ public WebDriver driver;
 
 	@Given("User is on the Manage user page")
 	public void user_is_on_the_manage_user_page() {
-		 manageUuserageTest = new ManageUuserPageTest(driver);
-		//manageUuserageTest.clickOnUser();
+		// manageUuserageTest = new ManageUuserPageTest(driver);
+	//	manageUuserageTest.clickOnUser();
 		
 		// title =	manageUuserageTest.getpageTitle();
 	//	System.out.println(title);
@@ -64,7 +64,8 @@ public WebDriver driver;
 
 	@When("User clicks the Tab {string}")
 	public void user_clicks_the_tab(String string) {
-	   System.out.println(string);
+		manageUuserageTest.clickOnUser();
+		System.out.println(string);
 	}
 
 	@Then("User should see the Manage user page")

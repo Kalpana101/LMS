@@ -1,8 +1,10 @@
 package appHooks;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.commons.io.FileUtils;
 import org.junit.BeforeClass;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -43,7 +45,7 @@ public class ApplicationHooks {
 	{
 		driver.quit();
 	}
-	
+}
 /*	@After(order=1)  (43:35)
 	public void tearDown(Scenario scenario, Object TakeScreenshot)
 	{
@@ -60,7 +62,6 @@ public class ApplicationHooks {
 	//	 String screenshotBase64 = ((TakesScreenshot) driver).getScreenshotAs(OutputType.);
 			
 		}*/
-			
 		
-	}
+	
 
